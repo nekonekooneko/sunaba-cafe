@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>すなばCafe</title>
+  <link rel="stylesheet" href="style.css">
+
+<body>
+
+
+
+<div class="wrapper">
+  <section id="home" class="section">
+    <div class="label">Home</div>
+    <p>老舗の喫茶店として、落ち着いた時間を提供しています。</p>
+    <p>子ども連れでも安心して過ごせます。</p>
+    <p>ベビーカーのまま入店でき、親子でゆっくりとした時間を楽しんでいただけます。</p>
+    <p>家族みんなが、自然と笑顔になれる場所を目指しています。</p>
+    <p>----------------------------</p>
+    <p>月曜定休　10:00〜18:00</p>
+    </section>
+
+  <section id="info" class="section">
+    <div class="label">Info</div>
+      <p>2026.1.18　ショートケーキ販売開始</p>
+    </section>
+
+  <section id="menu" class="section">
+    <div class="label">Menu</div>
+
+    <div class="menu-item">
+ <img src="images/coffee.jpg" alt="オリジナルコーヒー" class="coffee-img">
+
+      <div class="menu-text">
+        <span class="dots"><span>オリジナルコーヒー</span></span>
+        <span class="price">¥600</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/melon.jpg" alt="クリームメロンソーダ">
+      <div class="menu-text">
+        <span class="dots"><span>クリームメロンソーダ</span></span>
+        <span class="price">¥800</span>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/cake.jpg" alt="ショートケーキ">
+      <div class="menu-text">
+        <span class="dots"><span>ショートケーキ</span></span>
+        <span class="price">¥650</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="address" class="section address">
+    <div class="label">Address</div>
+
+    <div class="address-box">
+      <div class="address-text">
+        <p>〒123-4567</p>
+        <p>熊本県天草市ポルト</p>
+        <p>TEL：0123-45-6789</p>
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3366.611226933454!2d130.18675807613414!3d32.456339500304225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353fee545b5d0d71%3A0x738ac9674fe0c95a!2z5aSp6I2J5a6d5bO25Zu96Zqb5Lqk5rWB5Lya6aSo44Od44Or44OI!5e0!3m2!1sja!2sjp!4v1768715128295!5m2!1sja!2sjp" 
+          style="border:0;" 
+          allowfullscreen="" l
+          oading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+document.querySelectorAll('.main-nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+</script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
